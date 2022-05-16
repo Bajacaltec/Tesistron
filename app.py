@@ -24,7 +24,7 @@ col1,col2=st.columns(2)
 with col1:
     with st.expander('Identificación'):
         with st.form('Identificación'):
-            nombre=st.text_input('Nombre',)
+            nombre=st.text_input('Nombre')
             registro=st.form_submit_button('registra',)
             if registro==True:
                 cur.execute("INSERT INTO B(Nombre) VALUES(?)",(nombre))
